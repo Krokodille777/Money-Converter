@@ -67,6 +67,7 @@ int main(){
         std::cout<<"Enter currency: ";
         std::cin>>currency;
         std::cout<<"Enter currency you want to convert to: ";
+        std::cin>>currency2;
            
         
         if (currency == currencies[0] || currency2 == currencies[1]){
