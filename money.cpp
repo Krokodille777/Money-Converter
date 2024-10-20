@@ -62,12 +62,12 @@ int main(){
     const std::string currencies[8] = {"USD", "DKK", "GBP", "EUR", "RUB", "JPY", "ETH", "BTC"};
     std::string currency, currency2;
     double result = 0.0;
-    while (sum < 0){
         std::cout<<"Enter amount: ";
         std::cin>>sum;
         std::cout<<"Enter currency: ";
         std::cin>>currency;
         std::cout<<"Enter currency you want to convert to: ";
+           
         
         if (currency == currencies[0] || currency2 == currencies[1]){
             result = sum * usd_to_dkk;
@@ -350,11 +350,10 @@ int main(){
         else {
             std::cout<<"Error"<<std::endl;
         }
-        if (sum <= 0){
-        std::cout<<"Error"<<std::endl;
-    }
+        
     
-    }
+    
+    
     return 0;
 
 }
