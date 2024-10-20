@@ -2,7 +2,7 @@
 #include <string>
 
 int main(){
-    double sum;
+    double sum = 0.0;
     double eur_to_usd = 1.14;
     double eur_to_gbp = 0.88;
     double eur_to_dkk = 7.43;
@@ -62,7 +62,7 @@ int main(){
     const std::string currencies[8] = {"USD", "DKK", "GBP", "EUR", "RUB", "JPY", "ETH", "BTC"};
     std::string currency, currency2;
     double result = 0.0;
-    while (sum <= 0){
+    while (sum < 0){
         std::cout<<"Enter amount: ";
         std::cin>>sum;
         std::cout<<"Enter currency: ";
@@ -350,9 +350,10 @@ int main(){
         else {
             std::cout<<"Error"<<std::endl;
         }
-    }
-    if (sum <= 0){
+        if (sum <= 0){
         std::cout<<"Error"<<std::endl;
+    }
+    
     }
     return 0;
 
